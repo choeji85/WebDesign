@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+    vertical-align: top;
+}
+li{
+    list-style: none;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+button{
+    cursor: pointer;
+}
+body{
+    background: #fff;
+    color: #333;
+}
+.wrap{
+    width: 100%;
+    height: 920px;
+    position: relative;
+}
+.top{
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+header{
+    width: 200px;
+    background: #99d;
+}
+header h1{
+    margin:50px 0;
+}
+nav ul{
+    margin-left : 25px ;
+    width: 150px;
+}
+nav ul li{
+    position: relative;
+}
+nav > ul> li > a{
+    height: 100%;
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #99d;
+    background: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+nav > ul> li:hover >a{
+    background: #99d;
+    display: block;
+    height: 100%;
+}
+.sub{
+    position: absolute;
+    top:0;
+    left: 125px;
+    width: 700px;
+    z-index: 20;
+    display: none;
+}
+
+.sub li{
+    float: left;
+}
+.sub> li> a{
+    display: block;
+    height: 100%;
+    font-size: 16px;
+    padding: 14px;
+    width: 150px;
+    background: rgba(0,0,0,.7);
+    text-align: center;
+    font-weight: bold;
+    color: #fff
+}
+.sub> li:hover > a{
+    background: #99d;
+    color: #fff;
+}
+.menuBg{
+    width: calc(100% - 175px);
+    height: 160px;
+    position: absolute;
+    top: 150px;
+    left: 175px;
+    z-index: 10;
+}
+
+/*슬라이드*/
+.main{
+    width: calc(100% - 200px);
+}
+.slide{
+    height: 400px;
+    position: relative;
+}
+.slide li{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.slide .s1{
+    display: block;
+}
+.slide .s1{
+    background: url(../images/slide1.jpg) no-repeat center/cover;
+}
+.slide .s2{
+    background: url(../images/slide2.jpg) no-repeat center/cover;
+}
+.slide .s3{
+    background: url(../images/slide3.jpg) no-repeat center/cover;
+}
+.slide p{
+    font-size: 25px;
+    padding: 20px;
+    color: #fff;
+    background: rgba(0,0,0,.7);
+    border-radius: 50px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*바로가기링크*/
+.link{
+    height: 150px;
+    padding: 10px;
+}
+.link ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+.link ul li{
+    margin: 10px;
+}
+.link ul li p{
+    font-size: 12px;
+    font-weight: bold;
+}
+/*콘텐츠*/
+.contents{
+    display: flex;
+}
+.contents h2{
+    text-align: center;
+    width: 120px;
+    padding: 10px;
+    background: #99d;
+    color: #fff;
+    margin-left: 10px;
+}
+table{
+    margin: 10px;
+}
+.notice{
+    flex:calc(100% / 2);
+}
+.notice th{
+    width: 250px;
+    text-align: left;
+}
+.notice th,td{
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.notice td{
+    float: right;
+}
+.notice tr{
+    border-bottom: 1px dotted #333;
+}
+.gall{
+    flex:calc(100% / 2);
+}
+.gall ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.gall ul li{
+    margin: 10px 5px;
+}
+.gall ul li img{
+    width: 130px;
+    height: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.gall ul li p{
+    text-align: center;
+}
+
+
+/*푸터*/
+footer{
+    height: 120px;
+    background: #ccc;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fmain{
+    height: 100%;
+    float: left;
+    margin-left: 200px;
+}
+.fmenu{
+    height: 60px;
+}
+.fmenu ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 20px;
+}
+.fmenu ul li{
+    border-right: 1px solid #fff;
+    color: #fff;
+    padding: 0 10px;
+}
+.fmenu ul li:last-child{
+    border-right: 0;
+}
+.fcopy{
+    height: 60px;
+}
+.fcopy p{
+    color: #fff;
+    margin-left: 30px;
+}
+.fsite{
+    width: 200px;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.fsite select{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+/*팝업*/
+.popup{
+    padding: 10px;
+    width: 350px;
+    height: 350px;
+    font-size: 14px;
+    border: 5px solid #99d;
+    line-height: 2;
+    text-align: center;
+    background: #fff;
+    z-index: 999;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.popup h2{
+    font-size: 20px;
+    color: #99d;
+    margin-bottom: 10px;
+}
+.popup button{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}

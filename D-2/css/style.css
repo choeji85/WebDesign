@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+    vertical-align: top;
+}
+li{
+    list-style: none;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+button{
+    cursor: pointer;
+}
+body{
+    color: #333;
+    background: #fff;
+    position: relative;
+}
+.wrap{
+    width: 100%;
+    height: 750px;
+    position: relative;
+}
+.top{
+    height: 650px;
+    display: flex;
+}
+header{
+    width: 200px;
+    background: #fff;
+}
+header h1{
+    padding-top: 50px;
+}
+nav{
+    margin-left: 25px;
+    margin-top: 50px;
+}
+nav>ul>li>a{
+    display: block;
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav>ul>li:hover>a{
+    background: rgb(12, 127, 214);
+    color: #fff;
+}
+.sub{
+    display: none;
+}
+.sub>li>a{
+    display: block;
+    width: 150px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.sub>li:hover >a{
+    background: #ccc;
+}
+.main{
+    width: calc(100% - 200px);
+}
+.uppercon{
+    width: 100%;
+    display: flex;
+    height: 400px;
+}
+.slide{
+    width: calc(100% - 230px);
+    background: #fcc;
+    position: relative;
+    overflow: hidden;
+}
+.slide ul{
+    width: 300%;
+    height: 400px;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+}
+.slide ul li{
+    width: calc(100% / 3);
+    position: relative;
+    height: 400px;
+}
+.slide .s1{
+    background: url(../images/slide1.jpg) no-repeat center/cover;
+}
+.slide .s2{
+    background: url(../images/slide2.jpg) no-repeat center/cover;
+}
+.slide .s3{
+    background: url(../images/slide3.jpg) no-repeat center/cover;
+}
+.slide p{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner{
+    width: 230px;
+    border: 3px solid rgb(12, 127, 214);
+    border-radius: 10px;
+    margin: 5px;
+}
+.img{
+    width: 100%;
+    height: 150px;
+}
+.img img{
+    margin-top: 20px;
+    margin-left: 55px;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.txt{
+    font-size: 14px;
+    padding: 20px 10px;
+    font-weight: bold;
+    }
+.txt h3{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(12, 127, 214);
+    line-height: 2;
+}
+.txt p{
+    margin-top: 20px;
+}
+.arrow a{
+    display: block;
+    text-align: right;
+    padding-right: 20px;
+}
+.cons{
+    display: flex;
+    height: 250px;
+    width: 100%;
+}
+article{
+    width: calc(100% / 2);
+    padding: 10px;
+}
+article h2{
+    font-size: 20px;
+    padding: 10px;
+    width: 120px;
+    background: rgb(12, 127, 214);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.notice th,td{
+    font-size: 14px;
+    padding: 5px;
+    line-height: 2;
+}
+.notice th{
+    width: calc(100% - 150px);
+    text-align: left;
+}
+.notice td{
+    width: 150px;
+    text-align: center;
+}    
+.notice tr{
+    border-bottom: 1px dotted #333;
+}
+.gall ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 180px;
+}
+.gall ul p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer{
+    background: #aaa;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.flogo{
+    width: 200px;
+}
+.fcopy{
+    width: calc(100% - 400px);
+    padding-left: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+.fsite{
+    width: 200px;
+}
+.popup{
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    font-size: 16px;
+    line-height: 2;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    border: 5px solid rgb(12, 127, 214);
+    display: none;
+}
+.popup h2{
+    font-size: 20px;
+    color: rgb(12, 127, 214);
+    margin-bottom: 20px;
+}
+.popup button{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+}
