@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+    vertical-align: top;
+}
+li{
+    list-style: none;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+button{
+    cursor: pointer;
+}
+body{
+    background: #fff;
+    color:#333;
+}
+
+.wrap{
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
+.top{
+    width: 100%;
+    height: calc(100%-120px);
+    display: flex;
+}
+header{
+    width: 200px;
+    background: #ccc;
+}
+h1{
+    padding: 40px 0;
+    width: 200px;
+}
+nav>ul{
+    margin: 25px;
+}
+nav>ul>li>a{
+    display: block;
+    width: 150px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #5a4;
+    text-align: center;
+    
+}
+nav>ul>li:hover>a{
+    color:#5a4;
+    background: #fff;
+}
+nav>ul>li{
+    position: relative;
+}
+.sub{
+    position: absolute;
+    top:0;
+    left: 150px;
+    display: none;
+}
+.sub>li>a{
+    display: block;
+    width: 150px;
+    padding: 12px 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ccc;
+    background: #5a4;
+    text-align: center;
+}
+.sub>li:hover>a{
+    color:#333;
+    background: #fff;
+}
+.contents{
+    width:400px;
+}
+.contents h2{
+    font-size: 20px;
+    width: 120px;
+    background: #5a4;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.con1{display: flex;}
+.con1 .banner{
+    width:350px ;
+    height: 100px;
+    background: url(../images/banner.jpg)no-repeat center/cover ;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+.con1 .arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(200,200,200,.7);
+    margin-top: 25px;
+}
+.con2{
+    width: 400px;
+    margin-bottom: 10px;
+}
+.notice{
+    margin: 0 5px;
+}
+.notice th{
+    width: 250px;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    padding: 5px;
+}
+.notice td{
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+.notice tr{
+    border-bottom: 1px dotted #333;
+}
+.con3{
+    width: 400px;
+}
+.con3 ul{
+    display: flex;
+    justify-content: space-around;
+}
+.con3 ul li{
+    width: 180px;
+    height: 120px;
+    overflow: hidden;
+}
+.con4 ul{
+    border-top: 3px solid #333;
+    margin: 10px 0 ;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.con4 ul li{
+    width: 50px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.slide{
+    width: calc(100% - 600px);
+    position: relative;
+    overflow: hidden;
+}
+.slide ul{
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.slide ul li{
+    width: calc(100%/3);
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.slide li.s1{
+    background: url(../images/slide1.jpg) no-repeat center/cover;
+}
+.slide li.s2{
+    background: url(../images/slide2.jpg) no-repeat center/cover;
+}
+.slide li.s3{
+    background: url(../images/slide3.jpg) no-repeat center/cover;
+}
+.slide ul li a{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.7);
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+    line-height: 2;
+}
+footer{
+    width: 100%;
+    height: 120px;
+    background: #aaa;
+    display: flex;
+    position: relative;
+}
+.flogo{
+    width: 200px;
+    height: 120px;
+}
+.fmain{
+    width:calc(100%-450px) ;
+    height: 120px;
+}
+.fmenu{
+    width:calc(100%-450px) ;
+    height: 60px;
+}
+.fmenu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.fmenu ul li{
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-right: 1px solid #333;
+}
+.fmenu ul li:last-child{
+    border: 0;
+}
+.fcopy{
+    width:calc(100%-450px) ;
+    height: 60px;
+    font-size: 12px;
+}
+.fsite{
+    width:250px;
+    height: 120px;
+    text-align: center;
+    position: absolute;
+    top:0px;
+    right: 10px;
+}
+.fsite select{
+    margin-top: 50px;
+    font-size: 14px;
+    padding: 5px 0;
+}
+.popup{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #5a4;
+    background: #fff;
+    z-index: 999;
+    text-align: center;
+    line-height: 1.5;
+    display: none;
+}
+.popup h2{
+    color: #5a4;
+    margin: 20px 10px;
+    padding: 10px;
+}
+.popup button{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 100;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+}
