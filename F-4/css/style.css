@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+    vertical-align: top;
+}
+li{
+    list-style: none;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+button{
+    cursor: pointer;
+}
+body{
+    color:#333;
+    background: #fff;
+    position: relative;
+}
+.wrap{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+header{
+    width: 1340px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+}
+header h1{
+    padding-top: 30px;
+}
+nav{
+    position: absolute;
+    top: 50px;
+    right: 10px;  
+    z-index: 10;
+}
+nav>ul{
+    display: flex;
+}
+nav>ul>li>a{
+    display: block;
+    width: 150px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-right: 1px solid #333;
+    text-align: center;
+}
+nav>ul>li:hover>a{
+    color: #fff;
+    background: #e31a40;
+}
+nav>ul>li:last-child>a{
+    border-right: 2px solid #333;
+}
+.sub{
+    display: none;
+    z-index: 10;
+}
+.sub>li>a{
+    display: block;
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #777;
+}
+.sub>li:hover>a{
+    color: #fff;
+    background: #333;
+}
+.bg{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top:100px;
+    left: 0;
+    background: rgba(0,0,0,.7);
+    display: none;
+    z-index: 9;
+}
+/*슬라이드*/
+.slide{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.slide ul{
+    width: 100%;
+    height: 1050px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.slide ul li{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.slide .s1{
+    background: url(../images/slide1.jpg) no-repeat center/cover;
+}
+.slide .s2{
+    background: url(../images/slide2.jpg) no-repeat center/cover;
+}
+.slide .s3{
+    background: url(../images/slide3.jpg) no-repeat center/cover;
+}
+.slide  ul li p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0,0,0,.7);
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*바로가기*/
+.baro{
+    width: 1340px;
+    height: 100px;
+    background: rgba(255,255,255,.7);
+    position: absolute;
+    top:350px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.baro ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+.baro p{
+    font-size: 14px;
+    display: inline-block;
+}
+.contents{
+    width:1340px;
+    height: 450px;
+    margin: auto;
+}
+.banner{
+    width: 100%;
+    height: 150px;
+    margin:10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 5px solid #e31a40;
+    border-radius: 30px;
+}
+.banner .img{
+    width: 100px;
+    height: 90px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.con{
+    height: 300px;
+    width: 100%;
+    display: flex;
+}
+.con article{
+    width: 770px;
+}
+.con h2{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 120px;
+    color: #fff;
+    background: #e31a40;
+    margin-bottom: 20px;
+}
+.notice th,td{
+    font-size: 16px;
+    padding: 5px;
+    line-height: 2;
+    font-weight: bold;
+    text-align: center;
+}
+.notice th{
+    text-align: left;
+    width: 500px;
+}
+.notice tr{
+    border-bottom: 1px dotted #333;
+}
+.gall ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+.gall p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+footer{
+    background: #e31a40;
+    width: 1340px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.flogo{
+    width: 200px;
+}
+.fcopy{
+    width:940px;
+    padding-left: 30px;
+}
+.fsite{
+    width: 200px;
+}
+.popup{
+    width: 350px;
+    height: 350px;
+    line-height: 2;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    font-weight: bold;
+    z-index: 999;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:5px solid #e31a40;
+    display: none;
+}
+.popup h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #e31a40;
+}
+.popup button{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+.modal{
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}

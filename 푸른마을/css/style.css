@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+li{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+body{
+    color: #333;
+    background: #fff;
+}
+.wrap{
+    width: 100%;
+    height: 970px;
+    background: #ccc;
+    position: relative;
+}
+.top{
+    height: 850px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+header{
+    width: 200px;
+    background: #fff;
+}
+header h1{
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+nav{
+    margin-left: 25px;
+}
+nav>ul>li{
+    position: relative;
+}
+nav>ul>li>a{
+    display: block;
+    width: 150px;
+    font-size: 16px;
+    padding: 10px;
+    background: #9ea;
+    font-weight: bold;
+    color: #000;
+}
+nav>ul>li:hover>a{
+    background: rgba(0,0,0,.7);
+    color: #9ea;
+}
+.sub{
+    position: absolute;
+    top:0;
+    left:150px;
+    z-index: 10;
+    width: 800px;
+    display: none;
+}
+.sub> li{
+    float: left;
+}
+.sub>li>a{
+    display: block;
+    width: 150px;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+.sub>li:hover>a{
+    background: #9ea;
+    color: #333;
+}
+.bg{
+    background: rgba(0,0,0,.7);
+    width: calc(100% - 175px);
+    height: 166px;
+    position: absolute;
+    top:142px;
+    left:175px;
+    z-index: 5;
+    display: none;
+}
+.login{
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.login a:first-child::after{
+    content: "|";
+    text-align: center;
+    margin:0 10px;
+}
+.main{
+    width: calc(100% - 200px);
+}
+.slide{
+    width: 100%;
+    height: 400px;
+}
+.slide ul{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.slide ul li{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+.slide ul li:first-child{
+    display: block;
+}
+.slide .s1{
+    background: url(../images/slide1.jpg) no-repeat center/cover;
+}
+.slide .s2{
+    background: url(../images/slide2.jpg) no-repeat center/cover;
+}
+.slide .s3{
+    background: url(../images/slide3.jpg) no-repeat center/cover;
+}
+.slide ul li p{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color:#fff;
+    padding: 20px;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    border: 5px solid #9ea;
+    margin: 5px;
+    border-radius: 30px;
+    justify-content: space-around;
+}
+.banner img{
+    width: 150px;
+}
+.banner .txt{
+    width:calc(100% - 300px);
+}
+.banner .arrow{
+    width: 150px;
+}
+.tabmenu{
+    display: flex;
+}
+.tabmenu h2{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background: #fff;
+    border: 2px solid #9ea;
+    width: 120px;
+    margin-left: 10px;
+}
+.tabmenu .on{
+    background: #9ea;
+}
+.notice{
+    line-height: 2;
+}
+.notice th{
+    width:calc(100% - 200px) ;
+    text-align: left;
+    padding-left: 10px;
+}
+.notice td{
+    width: 200pd;
+    text-align: center;
+}
+.notice tr{
+    border-bottom: 1px dotted #333;
+}
+.tabcon{
+    height: 180px;
+    margin-left: 10px;
+    padding-top: 20px;
+    background: #9ea;
+}
+.gall ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.gall{
+    display: none;
+}
+footer{
+    display: flex;
+    height: 120px;
+    align-items: center;
+}
+.fmain{
+    width: calc(100% - 200px);
+}
+.fmenu{
+    height: 60px;
+}
+.fmenu ul{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.fmenu ul li{
+    padding: 0 10px;
+    font-size: 12px;
+    border-right: 1px solid #333;
+}
+.fcopy{
+    height: 60px;
+    padding-left: 50px;
+    font-size: 12px;
+}
+.popup{
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    line-height: 2;
+    font-weight: bold;
+    border: 5px solid #9ea;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    display: none;
+}
+.popup h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #9ea;
+}
+.popup button{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
